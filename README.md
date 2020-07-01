@@ -4,12 +4,11 @@ Build PETSc, SLEPc, DOLFIN/FENICS, mshr within a Python virtualenv, using system
 
 ## Instructions
 
-  
 1. Configure and run `build_all.sh`:
 
-  ```shell
-    ./build_all.sh |& tee build.log
-  ```
+    ```shell
+        ./build_all.sh |& tee build.log
+    ```
   
 2. To use FEniCS, load the environment (modules, environment variables, python venv) with:
 
