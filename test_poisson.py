@@ -112,7 +112,9 @@ def main():
 
     # test HDF5 write out
     with Timer('Z HDF5 write out'):
-        XDMFFile('test_poisson.xdmf').write(u)
+        fname = 'test_poisson.xdmf'
+        info('Writing XDMF/HDF5 files: ' + fname)
+        XDMFFile(fname).write(u)
 
 
 if __name__ == '__main__':
