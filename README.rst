@@ -6,6 +6,6 @@ Build PETSc, SLEPc, DOLFIN/FENICS, mshr within a Python virtualenv, using system
 Instructions
 ------------
 
-+ INSTALLATION
-+  Configure and run :code:`build_all.sh` 
+* INSTALLATION
+* Configure and run
 
