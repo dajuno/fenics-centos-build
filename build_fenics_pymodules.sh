@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 source env_build.sh
 
 source ${VENV}/bin/activate
@@ -24,6 +25,10 @@ elif [[ $FENICS_VERSION == "master" ]]; then
         pip3 install --no-deps --upgrade .
 
     done
+
+else
+    echo "unsupported FEniCS version \"${FENICS_VERSION}\" for fenics-python"
+    exit 1
 fi
 
 

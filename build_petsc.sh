@@ -1,11 +1,11 @@
 #!/bin/bash
-source env_build.sh
+set -e
 
-VERSION="3.13.2"
+source env_build.sh
 
 # export CXXFLAGS="${CXXFLAGS} -std=c++0x"
 
-echo "Downloading and building PETSc ${VERSION}"
+echo "Downloading and building PETSc ${PETSC_VERSION}"
 
 mkdir -p $BUILD_DIR/tar
 
@@ -25,9 +25,9 @@ export F90FLAGS="$generic_flags"
 export F77FLAGS="$generic_flags"
 
 cd ${BUILD_DIR} && \
-    wget --quiet --read-timeout=10 -nc -P tar/ http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-lite-${VERSION}.tar.gz && \
-    tar -xzf tar/petsc-lite-${VERSION}.tar.gz && \
-    cd petsc-${VERSION} && \
+    wget --quiet --read-timeout=10 -nc -P tar/ http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-lite-${PETSC_VERSION}.tar.gz && \
+    tar -xzf tar/petsc-lite-${PETSC_VERSION}.tar.gz && \
+    cd petsc-${PETSC_VERSION} && \
     python2 ./configure \
             --COPTFLAGS="$COPTFLAGS" \
             --CXXOPTFLAGS="$CXXOPTFLAGS" \

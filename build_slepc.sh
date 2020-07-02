@@ -1,7 +1,7 @@
 #!/bin/bash
-source env_build.sh
+set -e
 
-SLEPC_VERSION="3.13.3"
+source env_build.sh
 
 echo "Downloading and building SLEPc ${SLEPC_VERSION}"
 

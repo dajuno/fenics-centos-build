@@ -1,8 +1,8 @@
 #!/bin/bash
+set -e
 source env_build.sh
 
 export PETSC_DIR=${PREFIX}
-export MSHR_VERSION="2019.1.0"
 
 export CFLAGS="-O2 -march=native"
 export CXXFLAGS="-O2 -march=native"

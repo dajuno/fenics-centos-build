@@ -10,7 +10,7 @@ Build PETSc, SLEPc, DOLFIN/FENICS, mshr within a Python virtualenv, using system
         ./build_all.sh |& tee build.log
     ```
   
-2. To use FEniCS, load the environment (modules, environment variables, python venv) with:
+2. Load the FEniCS environment (modules, environment variables, python venv) with:
 
     ```shell
       source $PREFIX/share/dolfin/dolfin.conf

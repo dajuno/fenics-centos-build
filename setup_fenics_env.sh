@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 source env_build.sh
 
 echo "

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 python3 -m venv $VENV --system-site-packages --clear
 
