@@ -20,7 +20,7 @@ export PETSC4PY_VERSION=3.13.0
 export SLEPC4PY_VERSION=3.13.0 
 export MSHR_VERSION=2019.1.0
 
-# TAG that specifies the name of the build directories and the virtualenv
+# $TAG specifies the name of the build directories and the virtualenv
 # *** NOTE: modify this to change the installation path!
 # $TAG is arbitrary. date is useful for development build
 DATE=`date +%F`

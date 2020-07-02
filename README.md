@@ -2,11 +2,29 @@
 
 Build PETSc, SLEPc, DOLFIN/FENICS, mshr within a Python virtualenv, using system dependencies for OpenMPI, BLAS, LAPACK, HDF5, etc.
 
+## Dependencies on CentOS 8.1 (default)
+
+* openmpi-devel
+* hdf5-openmpi-devel
+* lapack-devel
+* openblas-devel
+* boost-devel
+* eigen3-devel
+* pybind11-devel
+* python36-devel
+* doxygen
+
+For mshr:
+
+* gmp-devel
+* mpfr-devel
+
+
 ## Instructions
 
 1. Configure and run `build_all.sh`:
 
-    ```shell
+    ```
         ./build_all.sh |& tee build.log
     ```
   
