@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-
 source env_build.sh
 
 export PETSC_DIR=${PREFIX}
